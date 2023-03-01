@@ -3,7 +3,7 @@ const app = express();
 
 //.end package install and import the below package for usage for the .env
 require('dotenv').config()
-
+const cors = require('cors')
 
 
 // //dbConfig just need to import for connection because already staments are written in dbConfig
@@ -11,6 +11,9 @@ const dbConfig = require('./config/dbConfig')
 
 // //de structure the json from front end
 app.use(express.json());
+app.use(cors({
+    origin: 'https://event-management-rahiii04.netlify.app'
+}));
 
 // //created end point connecting
 const userRoute = require('./routes/userRoute');
