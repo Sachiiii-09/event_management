@@ -12,7 +12,7 @@ const dbConfig = require('./config/dbConfig')
 // //de structure the json from front end
 app.use(express.json());
 app.use(cors({
-    origin: 'https://event-management-rahiii04.netlify.app'
+    origin: 'https://event-management-sachii09.netlify.app/'
 }));
 
 // //created end point connecting
